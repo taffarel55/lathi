@@ -1,0 +1,11 @@
+omeca_c = 2*pi*3000;
+N=10;
+f = linspace(0,20000,200);
+poles = roots([(j*omeca_c)^(-2*N),zeros(1,2*N-1),1]);
+B_poles = poles(find(real(poles)<0));
+A = poly(B_poles); A = A/A(end);
+B = 1;  
+Hmag_B = abs(M4_1(B,A,f*2*pi));
+plot(f,f*2*pi<=omeca_c,'k-',f,Hmag_B,'k--');
+xlabel('f [Hz]'); ylabel('|H_{RC}(j2\pi f|');
+axis([0 20000 -.05 1.05]); legend('Ideal','Butterworth filter');

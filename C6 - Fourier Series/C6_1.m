@@ -1,0 +1,11 @@
+n = 1:10; 
+a_n(1) = 0.504; a_n(n+1) = 0.504*2./(1+16*n.^2);
+b_n(1) = 0;     b_n(n+1) = 0.504*8*n./(1+16*n.^2);
+C_n(1) = a_n(1); C_n(n+1) = sqrt(a_n(n+1).^2 + b_n(n+1).^2);
+thetha_n(1) = 0; thetha_n(n+1) = atan2(-b_n(n+1),a_n(n+1));
+n = [0,n];
+clf; 
+subplot(2,2,1); stem(n,a_n,'k'); ylabel('a_n'); xlabel('n');
+subplot(2,2,2); stem(n,b_n,'k'); ylabel('b_n'); xlabel('n');
+subplot(2,2,3); stem(n,C_n,'k'); ylabel('C_n'); xlabel('n');
+subplot(2,2,4); stem(n,thetha_n,'k'); ylabel('\theta_n [rad]'); xlabel('n');

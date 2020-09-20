@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-Scripts dos exercícios do livro `Sinais e Sistemas Lineares - 2.ed.`
+Scripts dos exercícios do livro **Sinais e Sistemas Lineares - 2.ed.**
 
 **ISBN-10** : 8560031138
 
@@ -25,7 +25,6 @@ pkg install -forge signal
 ```
 
 ## Capítulos
-
 - [C03 - Discrete Systems](https://github.com/taffarel55/latti/tree/master/Chapters)
     - C3_3.m
     - C3_4.m

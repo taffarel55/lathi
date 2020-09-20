@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-Scripts dos exercícios do livro **Sinais e Sistemas Lineares - 2.ed.**
+Códigos dos exercícios do livro **Sinais e Sistemas Lineares - 2.ed.**
 
 **ISBN-10** : 8560031138
 
